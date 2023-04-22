@@ -11,6 +11,9 @@
 		870C08C629F40AF8009D99D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870C08C529F40AF8009D99D3 /* ContentView.swift */; };
 		870C08C829F40AF9009D99D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870C08C729F40AF9009D99D3 /* Assets.xcassets */; };
 		870C08CB29F40AF9009D99D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870C08CA29F40AF9009D99D3 /* Preview Assets.xcassets */; };
+		870C08DA29F4270F009D99D3 /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 870C08D829F4270F009D99D3 /* ExampleDatabase.xcdatamodeld */; };
+		870C08DE29F4284B009D99D3 /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870C08DC29F4284B009D99D3 /* FetchedObjects.swift */; };
+		870C08DF29F4284B009D99D3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870C08DD29F4284B009D99D3 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		870C08C529F40AF8009D99D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		870C08C729F40AF9009D99D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		870C08CA29F40AF9009D99D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		870C08D929F4270F009D99D3 /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
+		870C08DC29F4284B009D99D3 /* FetchedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
+		870C08DD29F4284B009D99D3 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 		870C08B729F40AF8009D99D3 = {
 			isa = PBXGroup;
 			children = (
+				870C08DB29F4282C009D99D3 /* Core Data */,
 				870C08C229F40AF8009D99D3 /* Little Lemon */,
 				870C08C129F40AF8009D99D3 /* Products */,
 			);
@@ -65,6 +72,16 @@
 				870C08CA29F40AF9009D99D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		870C08DB29F4282C009D99D3 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				870C08D829F4270F009D99D3 /* ExampleDatabase.xcdatamodeld */,
+				870C08DC29F4284B009D99D3 /* FetchedObjects.swift */,
+				870C08DD29F4284B009D99D3 /* Persistence.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				870C08DE29F4284B009D99D3 /* FetchedObjects.swift in Sources */,
+				870C08DA29F4270F009D99D3 /* ExampleDatabase.xcdatamodeld in Sources */,
 				870C08C629F40AF8009D99D3 /* ContentView.swift in Sources */,
 				870C08C429F40AF8009D99D3 /* Little_LemonApp.swift in Sources */,
+				870C08DF29F4284B009D99D3 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		870C08D829F4270F009D99D3 /* ExampleDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				870C08D929F4270F009D99D3 /* ExampleDatabase.xcdatamodel */,
+			);
+			currentVersion = 870C08D929F4270F009D99D3 /* ExampleDatabase.xcdatamodel */;
+			path = ExampleDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 870C08B829F40AF8009D99D3 /* Project object */;
 }
