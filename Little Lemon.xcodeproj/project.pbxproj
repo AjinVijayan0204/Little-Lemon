@@ -41,7 +41,6 @@
 		870C08B729F40AF8009D99D3 = {
 			isa = PBXGroup;
 			children = (
-				870C08DB29F4282C009D99D3 /* Core Data */,
 				870C08C229F40AF8009D99D3 /* Little Lemon */,
 				870C08C129F40AF8009D99D3 /* Products */,
 			);
@@ -58,6 +57,7 @@
 		870C08C229F40AF8009D99D3 /* Little Lemon */ = {
 			isa = PBXGroup;
 			children = (
+				870C08DB29F4282C009D99D3 /* Core Data */,
 				870C08C329F40AF8009D99D3 /* Little_LemonApp.swift */,
 				870C08C529F40AF8009D99D3 /* ContentView.swift */,
 				870C08C729F40AF9009D99D3 /* Assets.xcassets */,
