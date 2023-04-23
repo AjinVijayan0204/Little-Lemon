@@ -109,19 +109,19 @@ struct Menu: View {
     }
     
     func getMenuData(){
-        print("get food")
+        //print("get food")
         PersistenceController.shared.clear()
         
         guard let url = URL(string: "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json") else { return }
-        print("url done")
+        //print("url done")
         let request = URLRequest(url: url)
         URLSession.shared.dataTask(with: request) { data, URLResponse, error in
             if let data = data{
-                print(data)
+                //print(data)
                 if let menu = try? JSONDecoder().decode(MenuList.self, from: data){
-                    print(menu)
+                    //print(menu)
                     for item in menu.menu{
-                        print(item.title)
+                        //print(item.title)
                         let dish = Dish(context: viewContext)
                         dish.title = item.title
                         dish.price = item.price
